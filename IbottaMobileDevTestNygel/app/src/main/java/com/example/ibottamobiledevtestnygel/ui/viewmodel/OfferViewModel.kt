@@ -23,7 +23,7 @@ class OfferViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            if (repo.getAllOffers().value?.size == 0) {
+            if (repo.getFavorites().isEmpty()) {
                 repo.refreshOffers()
             }
         }
