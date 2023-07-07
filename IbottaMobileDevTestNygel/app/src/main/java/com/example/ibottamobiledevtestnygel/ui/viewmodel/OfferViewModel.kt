@@ -59,6 +59,7 @@ class OfferViewModel @Inject constructor(
     fun updateOfferFavoriteStatus(offer: OfferDatabaseEntity) {
         viewModelScope.launch {
             repo.updateOfferFavoriteStatusInRoom(offer)
+            favorites.value = repo.getFavorites()
         }
     }
 
