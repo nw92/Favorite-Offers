@@ -34,7 +34,7 @@ class OfferDaoTest {
     }
 
     @Test
-    fun writeUserAndReadInList() {
+    fun writeAndReadInList() {
         val offer = Offer(
             id = "",
             url = "https://product-images.ibotta.com/offer/dUxYcQPeq391-DiywFZF8g-normal.png",
